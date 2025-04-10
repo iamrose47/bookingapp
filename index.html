@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Booking App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Bus Booking</h1>
+
+  <div class="form-group">
+    <label for="filter">Filter:</label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="bus1">Bus 1</option>
+      <option value="bus2">Bus 2</option>
+      <option value="bus3">Bus 3</option>
+    </select>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <form id="bookingForm">
+    <div class="form-group">
+        <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Name" required />
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Email" required />
+    </div>
+    <br>
+    
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+      <input type="tel" id="phone" placeholder="Phone" required />
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="bus">Select Bus:</label>
+      <select id="bus" required>
+        <option value="bus1">Bus 1</option>
+        <option value="bus2">Bus 2</option>
+        <option value="bus3">Bus 3</option>
+      </select>
+    </div>
+    <br>
+
+    <button type="submit" id="submit">Book</button>
+  </form>
+
+  <div id="entries"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
